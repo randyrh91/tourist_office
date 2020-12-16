@@ -15,13 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tourist_office.views.views import *
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("saludo/", saludo),
-    path("despedida/", despedida),
-    path("fecha/<int:agno>", dame_fecha),
-    path("saludo_plantilla/<nombre>", saludo_plantilla)
 ]

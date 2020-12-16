@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'vp7ju^ryq2as&vcq5xc5972(jeia5jqf3*3yb71lx=u)2oz_8$'
+SECRET_KEY = 'wlz*u+m-fwzgrp76xgfu4kn-(0#n$8z4dsxz^(5%+yziviu%ft'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'tourist_office.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/xampp/htdocs/work/tourist_office/tourist_office/views'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

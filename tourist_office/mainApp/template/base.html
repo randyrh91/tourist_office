@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+{% load static %}
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'mainApp/img/fav.png' %}">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    {% block title %} {% endblock %}
+
+    <!-- #logo -->
+    {% block logo %} {% endblock %}
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'mainApp/css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'mainApp/css/main.css' %}">
+</head>
+
+<body>
+    <header id="header">
+        {% block header %}
+        <!-- #header -->
+        {% endblock %}
+    </header>
+    {% block body %}
+    <!-- #body -->
+    {% endblock %}
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        {% block footer %}
+        <!-- #body -->
+        {% endblock %}
+    </footer>
+    <!-- JavaScripts -->
+    <script src="{% static 'mainApp/js/vendor/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/popper.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="{% static 'mainApp/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'mainApp/js/easing.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/hoverIntent.js' %}"></script>
+    <script src="{% static 'mainApp/js/superfish.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'mainApp/js/mail-script.js' %}"></script>
+    <script src="{% static 'mainApp/js/main.js' %}"></script>
+</body>
+
+</html>

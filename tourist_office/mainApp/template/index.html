@@ -69,7 +69,7 @@
                     <div class="thumb">
                         <img class="img-fluid" src="{% static 'mainApp/img/eventos/' %}{{evento.foto}}" alt="">
                     </div>
-                    <a href="#">
+                    <a href="{% url 'evento' evento.id_evento %}">
                         <h4>{{evento.nombre}}</h4>
                     </a>
                     <p>
@@ -125,20 +125,19 @@
                     <div class="details">
                         <div class="tags">
                             <ul>
+                                {% for evento in categoria.evento %}
                                 <li>
                                     <!-- a href="#">Travel</a> -->
                                 </li>
                                 <li>
                                     <!-- a href="#">Otos</a> -->
                                 </li>
+                                {% endfor %}
                             </ul>
                         </div>
-                        <a href="#">
+                        <a href="{% url 'categorias' categoria.id_categoria %}">
                             <h4 class="title">{{categoria.nombre}}</h4>
                         </a>
-                        <p>
-                            {{categoria.descripcion}}
-                        </p>
                     </div>
                 </div>
                 {% endfor %}

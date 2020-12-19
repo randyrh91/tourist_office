@@ -595,11 +595,13 @@ th {
 }
 
 .pb-60 {
-    padding-bottom: 60px;
+    padding-bottom: 10px;
+    padding-top: 40px;
 }
 
 .pb-70 {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
+    padding-top: 40px;
 }
 
 .pb-80 {

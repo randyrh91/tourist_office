@@ -36,7 +36,7 @@
                 <div class="single-destination relative">
                     <div class="thumb relative">
                         <div class="overlay overlay-bg"></div>
-                        <img class="img-fluid" src="{% static 'mainApp/img/lugares/' %}{{lugar.foto}}" alt="">
+                        <img class="img-fluid" src="{{lugar.foto.url}}" alt="">
                     </div>
                     <div class="desc">
                         <a href="#" class="price-btn">подробнее</a>
@@ -67,7 +67,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="single-other-issue">
                     <div class="thumb">
-                        <img class="img-fluid" src="{% static 'mainApp/img/eventos/' %}{{evento.foto}}" alt="">
+                        <img class="img-fluid" src="{{evento.foto.url}}" alt="">
                     </div>
                     <a href="{% url 'evento' evento.id_evento %}">
                         <h4>{{evento.nombre}}</h4>
@@ -97,7 +97,7 @@
                 <a href="#" class="primary-btn text-uppercase">дополнительная информация</a>
             </div>
             <div class="col-lg-6 col-md-12 home-about-right no-padding">
-                <img class="img-fluid" src="{% static 'mainApp/img/oficina/' %}{{oficina.foto}}" alt="">
+                <img class="img-fluid" src="{{oficina.foto.url}}" alt="">
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
                 {% for categoria in categorias%}
                 <div class="single-recent-blog-post item">
                     <div class="thumb">
-                        <img class="img-fluid" src="{% static 'mainApp/img/categorias/' %}{{categoria.foto}}" alt="">
+                        <img class="img-fluid" src="{{categoria.foto.url}}" alt="">
                     </div>
                     <div class="details">
                         <div class="tags">

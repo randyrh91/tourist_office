@@ -11,8 +11,8 @@ from mainApp.models import Categoria
 # Create your views here.
 
 def portada(request):
-    lugares = Lugar.objects.all()
-    eventos = Evento.objects.all()
+    lugares = Lugar.objects.all()[:3]
+    eventos = Evento.objects.all()[:4]
     categorias = Categoria.objects.all()
     oficina = Oficina.objects.get(id_oficina = 1)
     return render(request, 'index.html', {'lugares':lugares, 'eventos':eventos, 'oficina': oficina, 'categorias':categorias})

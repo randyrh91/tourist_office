@@ -15,7 +15,7 @@
         </div>
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li><a href="index.html">Обложка</a></li>
+                <li><a href="{% url 'portada' %}">Обложка</a></li>
                 <li class="menu-has-children"><a href="">Куда идти</a>
                     <ul>
                         {% for categoria in categorias%}

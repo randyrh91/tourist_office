@@ -15,11 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mainApp.views import portada
-from mainApp.views import detalles
-from mainApp.views import contacto
-from mainApp.views import eventos_por_categoria
-
+from mainApp.views import portada, detalles, contacto, eventos_por_categoria
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +26,5 @@ urlpatterns = [
     path('contacto/', contacto, name = 'contacto'),
     path('categoria/<id_categoria>', eventos_por_categoria, name = 'categorias'),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) 
